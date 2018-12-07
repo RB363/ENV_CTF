@@ -60,6 +60,7 @@ pip3 install sympy
 # rsa-wiener-attack
 # rsa-tool
 
+deactivate
 
 # misc
 # pkcrack
