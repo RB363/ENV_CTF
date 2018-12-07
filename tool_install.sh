@@ -1,4 +1,4 @@
-mkvirtualenv crypto#! /usr/sh
+ ~mkvirtualenv crypto#! /usr/sh
 
 cd ~
 
@@ -21,7 +21,7 @@ source ~/.bashrc
 
 # gdb-peda & pwngdb
 git clone https://github.com/longld/peda.git ~/peda
-git clone https://github.com/scwuaptx/Pwngdb.git
+git clone https://github.com/scwuaptx/Pwngdb.git ~/Pwngdb
 cp ~/Pwngdb/.gdbinit ~/
 
 # pwntool
