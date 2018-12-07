@@ -13,7 +13,6 @@ pip install virtualenvwrapper
 mkdir Envs
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
-#source /usr/local/bin/virtualenv
 source ~/.bashrc
 
 # pwn
