@@ -1,7 +1,6 @@
- ~mkvirtualenv crypto#! /usr/sh
+#! /usr/sh 
 
 cd ~
-
 
 # for install virtualenv 
 # including pwn, crypto, misc, web
@@ -15,6 +14,7 @@ export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 source ~/.bashrc
 
+
 # pwn
 # mkvirtualenv pwn
 # workon pwn
@@ -25,6 +25,7 @@ git clone https://github.com/scwuaptx/Pwngdb.git ~/Pwngdb
 cp ~/Pwngdb/.gdbinit ~/
 
 # pwntool
+pip install pwn
 pip3 install git+https://github.com/arthaud/python3-pwntools.git
 
 # for install checksec for pwn
@@ -35,9 +36,13 @@ mv checksec /usr/sbin/
 
 # disactivate
 
+
 # crypto
 
 mkvirtualenv crypto
+
+pip install pwn
+pip3 install git+https://github.com/arthaud/python3-pwntools.git
 
 # pyCrypto
 pip install pycrypto
@@ -52,6 +57,7 @@ pip install gmpy2
 pip3 install gmpy2
 
 # sympy
+
 pip install sympy
 pip3 install sympy
 
