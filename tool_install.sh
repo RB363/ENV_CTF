@@ -1,4 +1,4 @@
-#! /usr/sh
+mkvirtualenv crypto#! /usr/sh
 
 cd ~
 
@@ -16,8 +16,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 source ~/.bashrc
 
 # pwn
-
-workon pwn
+# mkvirtualenv pwn
+# workon pwn
 
 # gdb-peda & pwngdb
 git clone https://github.com/longld/peda.git ~/peda
@@ -31,14 +31,30 @@ pip3 install git+https://github.com/arthaud/python3-pwntools.git
 wget https://github.com/slimm609/checksec.sh/raw/master/checksec
 sudo chmod +x checksec
 mv checksec /usr/sbin/
-tool put under /usr/local/bin now
+# tool put under /usr/local/bin now
 
-disactivate
-
-
-
+# disactivate
 
 # crypto
+
+mkvirtualenv crypto
+
+# pyCrypto
+pip install pycrypto
+pip3 install pycrypto
+
+# gmpy2
+sudo apt-get install libgmp-dev
+sudo apt-get install libmpfr-dev
+sudo apt-get install libmpc-dev
+sudo apt install libopenmpi-dev
+pip install gmpy2
+pip3 install gmpy2
+
+# sympy
+pip install sympy
+pip3 install sympy
+
 # xor-tool
 # Hashpump
 # rsa-wiener-attack
