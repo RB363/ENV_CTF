@@ -9,8 +9,10 @@ cd ~
 sudo apt-get install python-setuptools python3-pip -y
 pip install virtualenv
 
+mkdir Envs
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenv
 source ~/.bashrc
 
 # pwn
